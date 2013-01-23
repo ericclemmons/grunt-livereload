@@ -1,0 +1,47 @@
+{
+  "name": "grunt-livereload",
+  "description": "Refresh your CSS (or page) with each save via LiveReload.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ericclemmons/grunt-livereload",
+  "author": {
+    "name": "Eric Clemmons",
+    "email": "eric@smarterspam.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericclemmons/grunt-livereload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericclemmons/grunt-livereload/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ericclemmons/grunt-livereload/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": "bin/grunt-livereload",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "livereload-server": "~0.2.1",
+    "gaze": "~0.3.2",
+    "debug": "~0.7.0"
+  },
+  "devDependencies": {
+    "grunt": "0.3.17"
+  },
+  "keywords": [
+    "gruntplugin",
+    "reload",
+    "livereload",
+    "live",
+    "refresh"
+  ]
+}
