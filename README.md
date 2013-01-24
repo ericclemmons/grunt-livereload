@@ -70,6 +70,10 @@ the styles in your page without refreshing the whole browser.
 
 ## Changelog
 
+### v0.1.1
+
+- Refresh browser when `livereload` task is ran while server is running
+
 ### v0.1.0
 
 - Initial release

@@ -29,7 +29,7 @@ module.exports = function(grunt) {
   }
 
   function refresh(base, filepath) {
-    var relative = path.relative(base, filepath);
+    var relative = (base && filepath) ? path.relative(base, filepath) : '/';
 
     server.reload(relative);
 
@@ -44,8 +44,7 @@ module.exports = function(grunt) {
     var base    = grunt.file.expand(config.options.base || '.')[0];
 
     if (started) {
-      grunt.log.writeln("LiveReload server " + "already started".magenta);
-
+      refresh();
     } else {
       start();
 
