@@ -1,7 +1,7 @@
 {
   "name": "grunt-livereload",
   "description": "Refresh your CSS (or page) with each save via LiveReload.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/ericclemmons/grunt-livereload",
   "author": {
     "name": "Eric Clemmons",

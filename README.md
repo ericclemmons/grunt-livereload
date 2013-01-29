@@ -70,6 +70,12 @@ the styles in your page without refreshing the whole browser.
 
 ## Changelog
 
+### v0.1.2
+
+- If `livereload` attempts to start an already-running server, it logs
+  to the console rather than throwing an `err`.  (This is common when
+  clearing `require.cache`)
+
 ### v0.1.1
 
 - Refresh browser when `livereload` task is ran while server is running

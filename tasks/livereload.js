@@ -19,7 +19,9 @@ module.exports = function(grunt) {
   function start() {
     server.listen(function(err) {
       if (err) {
-        throw err;
+        grunt.log.writeln("LiveReload is already " + "started".red);
+
+        return false;
       }
 
       grunt.log.writeln("LiveReload server " + "started".cyan + " on port " + server.port.toString());
