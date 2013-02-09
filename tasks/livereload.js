@@ -44,6 +44,8 @@ module.exports = function(grunt) {
     var config  = grunt.config('livereload');
     var files   = grunt.file.expand(config.files);
     var base    = grunt.file.expand(config.options.base || '.')[0];
+    // utils was renamed to util with v0.4.0. Use fallback for backwards compatibility
+    var util    = grunt.util || grunt.utils;
 
     if (started) {
       refresh();
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
       start();
 
       gaze(files, function(err) {
-        this.on('all', grunt.util._.debounce(function(event, filepath) {
+        this.on('all', util._.debounce(function(event, filepath) {
           refresh(base, filepath);
         }, 250));
       });
