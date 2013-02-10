@@ -70,6 +70,11 @@ the styles in your page without refreshing the whole browser.
 
 ## Changelog
 
+### v0.1.3
+
+- Grunt 0.4 support (Thanks [@xbudex](https://github.com/ericclemmons/grunt-livereload/pull/2)!)
+
+
 ### v0.1.2
 
 - If `livereload` attempts to start an already-running server, it logs
