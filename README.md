@@ -2,6 +2,14 @@
 
 Refresh your CSS (or page) with each save via [LiveReload][1].
 
+## DEPRECATED IN FAVOR OF `grunt-contrib-livereload`
+
+> https://github.com/gruntjs/grunt-contrib-livereload
+
+This plugin originated by there not being a LiveReload plugin that could be reloaded via `watch` repeatedly that also supported CSS-only reloading.
+
+Now that the Yeoman community has resolved that, this plugin is no longer necessary, even though it still works great :)
+
 
 ## Getting Started
 
